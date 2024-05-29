@@ -4,50 +4,158 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nguyễn Công Việt</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/assets/style.css">
   <style>
     html body {
       margin: 0;
     }
 
-    .navbar ul{
-      margin: 15px;
-      display: flex;
-      float: left;
+    .navbar .menu{
+      margin: 30px;
+      display: flex;/* flex là xét cho thằng cha */
       font-size: 18px;
-      font-weight: 500;
+      /* bỏ dấu chấm của thẻ li */
+      list-style: none;
     }
 
-    .container li{
+    .content {
       display: flex;
-      margin: 10px;
+      align-items: center;
+    }
+
+    .icons-list {
+      margin: 20px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar li {
+      margin-left: 20px;
+
+    }
+
+    .container {
+      width: 93%;
+      /* margin 0 auto la can giua */
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
     }
 
 
     .cover {
-      padding: 30px;
-      border: 15px;
+      padding: 90px;
       box-sizing: border-box;
       background-image: linear-gradient(to bottom right, red, yellow);
-      clear: both;
     }
+
+    .content-name {
+      margin-left: 20px;
+    }
+
+    .navbar-logo {
+      margin-top: 20px;
+    }
+
+    .icon-list {
+      list-style: none;
+      align-items: center;
+    }
+
   </style>
 </head>
 <body>
   <nav class="navbar">
     <div class="container">
-      <ul>
-        <li>Home</li>
-        <li>Dashboard</li>
-        <li>Projects</li>
-        <li>Tasks</li>
-        <li>Reporting</li>
-        <li>Designers</li>
+      <!-- Start left div -->
+      <div class="content">
+        <!-- Start logo -->
+        <div class="logo">logo</div>
+        <!-- End logo -->
+
+        <!-- Start menu -->
+        <ul class="menu">
+          <li>Home</li>
+          <li>Dashboard</li>
+          <li>Projects</li>
+          <li>Tasks</li>
+          <li>Reporting</li>
+          <li>Designers</li>
+        </ul>
+        <!-- End menu -->
+      </div>
+      <!-- End left div -->
+
+      <!-- Start icon group -->
+      <ul class="icons-list">
+        <li><i class="fas fa-cloud"></i></li>
+        <li><i class="fas fa-heart"></i></li>
+        <li><i class="fas fa-car"></i></li>
+        <li><i class="fas fa-bars"></i></li>
       </ul>
+      <!-- End icon group -->
     </div>
   </nav>
+
   <div class="cover">
-    <h1>hello</h1>
+    <!-- cover -->
   </div>
+
+  <nav class="navbar-logo">
+    <div class="container">
+      <!-- start left div -->
+      <div class="content">
+        <!-- start logo -->
+        <div class="logo-1">logo</div>
+        <!-- end logo -->
+        <!-- start content -->
+        <div class="content-name">
+          Candice Wu <br>
+          I'm a Producr Designer based in Melbourne, Australia.
+        </div>
+        <!-- end content -->
+      </div>
+      <!-- end left div -->
+
+      <!-- start button -->
+      <div class="button">
+        <button type="submit" style="background-color: white;">View Profile</button>
+        <button type="submit" style="background-color: blueviolet; color: white;">+ Follow</button>
+      </div>
+      <!-- end button -->
+    </div>
+  </nav>
+  <hr style="margin-top: 30px;" width="93%" size="1px" align="center" />
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="about-me">About me</div>
+
+      <div class="content-name1">
+        <ul class="icon-list">
+          <li>
+            I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow
+            devolopment. I'm always striving to grow and learn something new and I don't take myself too seriously.
+          </li><br>
+          <li>
+            I'm passionate about helping startups grow, improve their customer experience, and to raise venture capital.
+          </li>
+          <a href="">Read more</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <button
+    type="submit" class="nhom chugn style" id="gia tri duy nhat" >
+    <i></i>
+    <span>Click me</span>
+  </button>
+  <!-- thẻ button type = submit thì trình duyệt sẽ gửi dữ liệu của form lên
+       thẻ type = reset thì trình duyệt khôi phục lại form về giá trị ban đầu -->
+
 </body>
 </html>
