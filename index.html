@@ -4,50 +4,341 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nguyễn Công Việt</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/assets/style.css">
   <style>
     html body {
       margin: 0;
     }
 
-    .navbar ul{
-      margin: 15px;
-      display: flex;
-      float: left;
+    .navbar .menu {
+      margin: 30px;
+      display: flex;/* flex là xét cho thằng cha */
       font-size: 18px;
-      font-weight: 500;
+      /* bỏ dấu chấm của thẻ li */
+      list-style: none;
     }
 
-    .container li{
+    .content {
       display: flex;
-      margin: 10px;
+      align-items: center;
     }
 
+    .icons-list {
+      margin: 20px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar li {
+      margin-left: 20px;
+    }
+
+    .container {
+      width: 93%;
+      /* margin 0 auto la can giua */
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .about-me {
+      margin-top: 14px;
+    }
+
+    .container-1 {
+      width: 93%;
+      /* margin 0 auto la can giua */
+      margin: 0 auto;
+      display: flex;
+    }
 
     .cover {
-      padding: 30px;
-      border: 15px;
-      box-sizing: border-box;
+      padding: 90px;
       background-image: linear-gradient(to bottom right, red, yellow);
-      clear: both;
     }
+
+    .content-name {
+      margin-left: 20px;
+    }
+
+    .navbar-logo {
+      margin-top: 20px;
+    }
+
+    .icon-list {
+      padding-left: 6%;
+      margin: 5 auto;
+      list-style: none;
+      align-items: center;
+    }
+
+    .logo-1 {
+      padding: 40px;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+
+    .menu-1 {
+      padding: 0px;
+      padding-left: 10px;
+      background-color: #F8F5FE;
+      margin: 20px auto;
+      list-style: none;
+      display: flex;
+      height: 75px;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+      border: 1px;
+    }
+
+    .experience {
+      margin-top: 14px;
+    }
+
+    .logo-2 {
+      width: 30px;
+      padding: 10px;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+
+    .menu-experience1 {
+      width: 70%;
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .icon-list1 {
+      padding-left: 14%;
+      list-style: none;
+      width: 40%;
+    }
+
+    .content-experience0 {
+      display: flex;
+      align-items: start;
+    }
+
+    .color-experience {
+      border-radius: 10px;
+      border: 1px solid whitesmoke;
+      background-color: wheat;
+    }
+
+    .content-experience {
+      margin-left: 20px;
+    }
+
+    li.ex1 {
+      display: block;
+    }
+
   </style>
 </head>
 <body>
   <nav class="navbar">
     <div class="container">
-      <ul>
-        <li>Home</li>
-        <li>Dashboard</li>
-        <li>Projects</li>
-        <li>Tasks</li>
-        <li>Reporting</li>
-        <li>Designers</li>
+      <!-- Start left div -->
+      <div class="content">
+        <!-- Start logo -->
+        <div class="logo">logo</div>
+        <!-- End logo -->
+
+        <!-- Start menu -->
+        <ul class="menu">
+          <li>Home</li>
+          <li>Dashboard</li>
+          <li>Projects</li>
+          <li>Tasks</li>
+          <li>Reporting</li>
+          <li>Designers</li>
+        </ul>
+        <!-- End menu -->
+      </div>
+      <!-- End left div -->
+
+      <!-- Start icon group -->
+      <ul class="icons-list">
+        <li><i class="fas fa-cloud"></i></li>
+        <li><i class="fas fa-heart"></i></li>
+        <li><i class="fas fa-car"></i></li>
+        <li><i class="fas fa-bars"></i></li>
       </ul>
+      <!-- End icon group -->
     </div>
   </nav>
+
   <div class="cover">
-    <h1>hello</h1>
+    <!-- cover -->
   </div>
+
+  <nav class="navbar-logo">
+    <div class="container">
+      <!-- start left div -->
+      <div class="content">
+        <!-- start logo -->
+        <div class="logo-1">Logo</div>
+        <!-- end logo -->
+        <!-- start content -->
+        <div class="content-name">
+          Candice Wu <p class="ex1"></p>
+          I'm a Producr Designer based in Melbourne, Australia.
+        </div>
+        <!-- end content -->
+      </div>
+      <!-- end left div -->
+
+      <!-- start button -->
+      <div class="button">
+        <button type="submit" style="background-color: white;">View Profile</button>
+        <button type="submit" style="background-color: blueviolet; color: white;">+ Follow</button>
+      </div>
+      <!-- end button -->
+    </div>
+  </nav>
+
+  <hr style="margin-top: 30px;" width="100%" size="1px" align="center" />
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="about-me">About me</div>
+
+      <div class="content-name1">
+        <ul class="icon-list">
+          <li>
+            <p class="ex1">
+              I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow
+              devolopment. I'm always striving to grow and learn something new and I don't take myself too seriously.
+            </p>
+            </li>
+          <li>
+            <p class="ex1">
+            I'm passionate about helping startups grow, improve their customer experience, and to raise venture capital.
+            </p>
+          </li>
+          <li>
+            <p class="ex1"><a href="">Read more</a></p>
+          </li>
+          <li>
+            <div class="link-web">
+              <ul class="menu-1">
+                <li>
+                  <a href="">
+                    Location <p class="ex1"></p>
+                    Melbourne, Australia
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Website <p class="ex1"></p>
+                    candicewu.com <i class="fas fa-cloud"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Portfolio <p class="ex1"></p>
+                    @candicewu <i class="fas fa-cloud"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Email <p class="ex1"></p>
+                    hi@candicewu.com <i class="fas fa-cloud"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <hr style="margin-top: 30px;" width="93%" size="1px" align="center" />
+
+  <nav class="navbar">
+    <div class="container-1">
+      <div class="experience">Experience</div>
+
+      <div class="menu-experience1">
+        <ul class="icon-list1">
+          <li>
+            <div class="color-experience">
+              <div class="content-experience0">
+                <div class="logo-2">Logo</div>
+
+                <div class="content-experience">
+                  Lead Product Designer <p class="ex1"></p>
+                  Layers
+                  <p>May 2020 - Present</p>
+                </div>
+              </div>
+              <hr style="margin-top: 30px;" width="100%" size="1px" align="center" />
+              <a href="">View project</a>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="icon-list1">
+          <li>
+            <div class="color-experience">
+              <div class="content-experience0">
+                <div class="logo-2">Logo</div>
+
+                <div class="content-experience">
+                  Lead Product Designer <p class="ex1"></p>
+                  Layers
+                  <p>May 2020 - Present</p>
+                </div>
+              </div>
+              <hr style="margin-top: 30px;" width="100%" size="1px" align="center" />
+              <a href="">View project</a>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="icon-list1">
+          <li>
+            <div class="color-experience">
+              <div class="content-experience0">
+                <div class="logo-2">Logo</div>
+
+                <div class="content-experience">
+                  Lead Product Designer <p class="ex1"></p>
+                  Layers
+                  <p>May 2020 - Present</p>
+                </div>
+              </div>
+              <hr style="margin-top: 30px;" width="100%" size="1px" align="center" />
+              <a href="">View project</a>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="icon-list1">
+          <li>
+            <div class="color-experience">
+              <div class="content-experience0">
+                <div class="logo-2">Logo</div>
+
+                <div class="content-experience">
+                  Lead Product Designer <p class="ex1"></p>
+                  Layers
+                  <p>May 2020 - Present</p>
+                </div>
+              </div>
+              <hr style="margin-top: 30px;" width="100%" size="1px" align="center" />
+              <a href="">View project</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </body>
 </html>
