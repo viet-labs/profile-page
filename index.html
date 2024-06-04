@@ -6,172 +6,35 @@
   <title>Nguyễn Công Việt</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/style.css">
-  <style>
-    html body {
-      margin: 0;
-    }
-
-    .navbar .menu {
-      margin: 30px;
-      display: flex;/* flex là xét cho thằng cha */
-      font-size: 18px;
-      /* bỏ dấu chấm của thẻ li */
-      list-style: none;
-    }
-
-    .content {
-      display: flex;
-      align-items: center;
-    }
-
-    .icons-list {
-      margin: 20px;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .navbar li {
-      margin-left: 20px;
-    }
-
-    .container {
-      width: 93%;
-      /* margin 0 auto la can giua */
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .about-me {
-      margin-top: 14px;
-    }
-
-    .container-1 {
-      width: 93%;
-      /* margin 0 auto la can giua */
-      margin: 0 auto;
-      display: flex;
-    }
-
-    .cover {
-      padding: 90px;
-      background-image: linear-gradient(to bottom right, red, yellow);
-    }
-
-    .content-name {
-      margin-left: 20px;
-    }
-
-    .navbar-logo {
-      margin-top: 20px;
-    }
-
-    .icon-list {
-      padding-left: 6%;
-      margin: 5 auto;
-      list-style: none;
-      align-items: center;
-    }
-
-    .logo-1 {
-      padding: 40px;
-      border-radius: 50%;
-      border: 1px solid black;
-    }
-
-    .menu-1 {
-      padding: 0px;
-      padding-left: 10px;
-      background-color: #F8F5FE;
-      margin: 20px auto;
-      list-style: none;
-      display: flex;
-      height: 75px;
-      justify-content: space-between;
-      align-items: center;
-      border-radius: 10px;
-      border: 1px;
-    }
-
-    .experience {
-      margin-top: 14px;
-    }
-
-    .logo-2 {
-      width: 30px;
-      padding: 10px;
-      border-radius: 50%;
-      border: 1px solid black;
-    }
-
-    .menu-experience1 {
-      width: 70%;
-      display: flex;
-      list-style: none;
-      flex-wrap: wrap;
-    }
-
-    .icon-list1 {
-      padding-left: 6%;
-      list-style: none;
-      width: 40%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .content-experience0 {
-      display: flex;
-      align-items: start;
-    }
-
-    .color-experience {
-      border-radius: 10px;
-      border: 1px solid whitesmoke;
-      background-color: wheat;
-    }
-
-    .content-experience {
-      margin-left: 20px;
-    }
-
-    li.ex1 {
-      display: block;
-    }
-
-  </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <!-- Start left div -->
-      <div class="content">
-        <!-- Start logo -->
-        <div class="logo">logo</div>
-        <!-- End logo -->
+  <nav class="navbar flex">
+    <div class="container flex">
+      <div class="content flex">
+        <div class="logo flex">
+          <a href=""><img src="/image/logo.png" alt="Image"></a>
+        </div>
 
-        <!-- Start menu -->
-        <ul class="menu">
-          <li>Home</li>
-          <li>Dashboard</li>
-          <li>Projects</li>
-          <li>Tasks</li>
-          <li>Reporting</li>
-          <li>Designers</li>
-        </ul>
-        <!-- End menu -->
+        <div class="content-menu flex">
+          <ul class="menu flex">
+            <li><a href="">Home</a></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Tasks</a></li>
+            <li><a href="">Reporting</a></li>
+            <li><a href="">Designers</a></li>
+          </ul>
+        </div>
       </div>
-      <!-- End left div -->
 
-      <!-- Start icon group -->
-      <ul class="icons-list">
-        <li><i class="fas fa-cloud"></i></li>
-        <li><i class="fas fa-heart"></i></li>
-        <li><i class="fas fa-car"></i></li>
-        <li><i class="fas fa-bars"></i></li>
-      </ul>
-      <!-- End icon group -->
+      <div class="content-icon">
+        <ul class="icons-list flex">
+          <li><a href=""><i class="fas fa-cloud"></i></a></li>
+          <li><a href=""><i class="fas fa-heart"></i></a></li>
+          <li><a href=""><i class="fas fa-car"></i></a></li>
+          <li><a href=""><img src="/image/icon-login.png" alt=""></a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -179,87 +42,75 @@
     <!-- cover -->
   </div>
 
-  <nav class="navbar-logo">
-    <div class="container">
-      <!-- start left div -->
-      <div class="content">
-        <!-- start logo -->
-        <div class="logo-1">Logo</div>
-        <!-- end logo -->
-        <!-- start content -->
-        <div class="content-name">
-          Candice Wu <p class="ex1"></p>
-          I'm a Producr Designer based in Melbourne, Australia.
-        </div>
-        <!-- end content -->
+  <div class="container flex">
+    <div class="content flex">
+      <div class="content-logo flex">
+        <a href=""><img src="/image/logo-account.png" alt="Image"></a>
       </div>
-      <!-- end left div -->
 
-      <!-- start button -->
-      <div class="button">
-        <button type="submit" style="background-color: white;">View Profile</button>
-        <button type="submit" style="background-color: blueviolet; color: white;">+ Follow</button>
+      <div class="content-account">
+        <p class="name-account">Candice Wu</p>
+        <p class="title-account-color">I'm a Producr Designer based in Melbourne, Australia.</p>
       </div>
-      <!-- end button -->
     </div>
-  </nav>
 
-  <hr style="margin-top: 30px;" width="100%" size="1px" align="center" />
+    <div class="button-account">
+      <button type="submit" class="viewportfolio">View Portfolio</button>
+      <button type="submit" class="follow">+ Follow</button>
+    </div>
+  </div>
 
-  <nav class="navbar">
-    <div class="container">
-      <div class="about-me">About me</div>
+  <section class="section flex">
+    <div class="section-container flex">
+      <div class="section-title">
+        About me
+      </div>
 
-      <div class="content-name1">
-        <ul class="icon-list">
-          <li>
-            <p class="ex1">
-              I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow
-              devolopment. I'm always striving to grow and learn something new and I don't take myself too seriously.
-            </p>
-            </li>
-          <li>
-            <p class="ex1">
+      <div class="section-body">
+        <div class="content-about">
+          <p class="title-color">
+            I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow
+            devolopment. I'm always striving to grow and learn something new and I don't take myself too seriously.
+          </p>
+          <p class="title-account-color">
             I'm passionate about helping startups grow, improve their customer experience, and to raise venture capital.
-            </p>
-          </li>
-          <li>
-            <p class="ex1"><a href="">Read more</a></p>
-          </li>
-          <li>
-            <div class="link-web">
-              <ul class="menu-1">
-                <li>
-                  <a href="">
-                    Location <p class="ex1"></p>
-                    Melbourne, Australia
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Website <p class="ex1"></p>
-                    candicewu.com <i class="fas fa-cloud"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Portfolio <p class="ex1"></p>
-                    @candicewu <i class="fas fa-cloud"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Email <p class="ex1"></p>
-                    hi@candicewu.com <i class="fas fa-cloud"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+          </p>
+          <p class="title-about">
+            <a href="">Read more</a>
+          </p>
+        </div>
+
+        <div class="content-body">
+          <ul class="list-links flex">
+            <li>
+              <p class="color-word">Location</p>
+              <p class="content-logo">
+                <a href=""><img src="/image/logo0.png" alt="">Melbourne, Australia</a>
+              </p>
+            </li>
+            <li>
+              <p class="color-word">Website</p>
+              <p>
+                <a href="">candicewu.com <i class="fas fa-cloud"></i></a>
+              </p>
+            </li>
+            <li>
+              <p class="color-word">Portfolio</p>
+              <p>
+                <a href="">@candicewu <i class="fas fa-cloud"></i></a>
+              </p>
+            </li>
+            <li>
+              <p class="color-word">Email</p>
+              <p>
+                <a href="">hi@candicewu.com <i class="fas fa-cloud"></i></a>
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </nav>
+  </section>
 
   <section class="section flex">
     <div class="section-container flex">
@@ -271,11 +122,12 @@
         <div class="card">
           <div class="card-inner">
             <div class="card-header flex">
-              <div class="card-icon">
-                logo
+              <div class="card-icon flex">
+                <a href=""><img src="/image/logo1.png" alt=""></a>
               </div>
               <div class="card-title">
-                title
+                <p class="color-headline">Lead Product Designer</p>
+                <p class="color-subheadings">Layers</p>
               </div>
             </div>
             <div class="card-body">May 2020 - Present</div>
@@ -286,17 +138,19 @@
             </div>
           </div>
         </div>
+
         <div class="card">
           <div class="card-inner">
             <div class="card-header flex">
-              <div class="card-icon">
-                logo
+              <div class="card-icon flex">
+                <a href=""><img src="/image/logo2.png" alt=""></a>
               </div>
               <div class="card-title">
-                title
+                <p class="color-headline">Product Designer</p>
+                <p class="color-subheadings">Sisyphus</p>
               </div>
             </div>
-            <div class="card-body">May 2020 - Present</div>
+            <div class="card-body">Jan 2018 - May 2020</div>
             <div class="card-footer">
               <a href="javascript:void(0)">
                 View project
@@ -304,17 +158,19 @@
             </div>
           </div>
         </div>
+
         <div class="card">
           <div class="card-inner">
             <div class="card-header flex">
-              <div class="card-icon">
-                logo
+              <div class="card-icon flex">
+                <a href=""><img src="/image/logo3.png" alt=""></a>
               </div>
               <div class="card-title">
-                title
+                <p class="color-headline">UX Designer</p>
+                <p class="color-subheadings">Catalog</p>
               </div>
             </div>
-            <div class="card-body">May 2020 - Present</div>
+            <div class="card-body">Mar 2017 - Jan 2018</div>
             <div class="card-footer">
               <a href="javascript:void(0)">
                 View project
@@ -322,17 +178,19 @@
             </div>
           </div>
         </div>
+
         <div class="card">
           <div class="card-inner">
             <div class="card-header flex">
-              <div class="card-icon">
-                logo
+              <div class="card-icon flex">
+                <a href=""><img src="/image/logo4.png" alt=""></a>
               </div>
               <div class="card-title">
-                title
+                <p class="color-headline">Visual Designer</p>
+                <p class="color-subheadings">Quotient</p>
               </div>
             </div>
-            <div class="card-body">May 2020 - Present</div>
+            <div class="card-body">Apr 2015 - Mar 2017</div>
             <div class="card-footer">
               <a href="javascript:void(0)">
                 View project
@@ -343,85 +201,5 @@
       </div>
     </div>
   </section>
-
-  <nav class="navbar">
-    <div class="container-1">
-      <div class="experience">Experience</div>
-
-      <div class="menu-experience1">
-        <ul class="icon-list1">
-          <li>
-            <div class="color-experience">
-              <div class="content-experience0">
-                <div class="logo-2">Logo</div>
-
-                <div class="content-experience">
-                  Lead Product Designer <p class="ex1"></p>
-                  Layers
-                  <p>May 2020 - Present</p>
-                </div>
-              </div>
-              <hr style="margin-top: 30px;" width="100%" size="1px" align="center" />
-              <a href="">View project</a>
-            </div>
-          </li>
-        </ul>
-
-        <ul class="icon-list1">
-          <li>
-            <div class="color-experience">
-              <div class="content-experience0">
-                <div class="logo-2">Logo</div>
-
-                <div class="content-experience">
-                  Lead Product Designer <p class="ex1"></p>
-                  Layers
-                  <p>May 2020 - Present</p>
-                </div>
-              </div>
-              <hr style="margin-top: 30px;" width="100%" size="1px" align="center" />
-              <a href="">View project</a>
-            </div>
-          </li>
-        </ul>
-
-        <ul class="icon-list1">
-          <li>
-            <div class="color-experience">
-              <div class="content-experience0">
-                <div class="logo-2">Logo</div>
-
-                <div class="content-experience">
-                  Lead Product Designer <p class="ex1"></p>
-                  Layers
-                  <p>May 2020 - Present</p>
-                </div>
-              </div>
-              <hr style="margin-top: 30px;" width="100%" size="1px" align="center" />
-              <a href="">View project</a>
-            </div>
-          </li>
-        </ul>
-
-        <ul class="icon-list1">
-          <li>
-            <div class="color-experience">
-              <div class="content-experience0">
-                <div class="logo-2">Logo</div>
-
-                <div class="content-experience">
-                  Lead Product Designer <p class="ex1"></p>
-                  Layers
-                  <p>May 2020 - Present</p>
-                </div>
-              </div>
-              <hr style="margin-top: 30px;" width="100%" size="1px" align="center" />
-              <a href="">View project</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 </body>
 </html>
