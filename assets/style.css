@@ -12,10 +12,23 @@ body {
 }
 
 .container {
+  position: relative;
   width: 92%;
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
+}
+
+.content-2 {
+  position: absolute;
+  width: 100%;
+  bottom: -110px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-1 {
+  align-items: center;
 }
 
 .logo a {
@@ -74,7 +87,7 @@ body {
   align-items: center;
 }
 
-.content-logo img{
+.content-logo img {
   border-radius: 50%;
   border: solid 3px #FFFFFF;
   box-shadow: 1px 3px 2px 2px #F7F7F7;
@@ -87,10 +100,12 @@ body {
 
 .name-account {
   font-size: 25px;
+  margin: 20px 0px 0px 0px ;
   font-weight: bold;
 }
 
 .title-account-color {
+  margin: 6px 0px 0px 0px;
   color: #9399A7;
 }
 
@@ -125,12 +140,27 @@ body {
 }
 
 .list-links {
+  height: 98px;
   margin: 0;
-  padding-left: 0px;
+  padding: 0;
   list-style: none;
   background-color: #F8F5FE;
   font-weight: bold;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: start;
+  border-radius: 6px;
+}
+
+.list-links li {
+  padding: 0rem 3rem 0rem 1.5rem;
+}
+
+.list-links img {
+  padding-right: 8px;
+}
+
+.list-links i {
+  padding-left: 8px;
 }
 
 .color-word {
@@ -151,7 +181,12 @@ body {
 }
 
 .section {
-  margin-top: 2rem;
+  margin-top: 9rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.section-2 {
   width: 100%;
   justify-content: center;
 }
@@ -169,13 +204,13 @@ body {
 }
 
 .section-body {
+  justify-content: space-between;
   flex: 4;
 }
 
 .card {
-  width: 50%;
-  padding-right: 1rem;
-  margin-bottom: 1rem;
+  width: 48.9%;
+  margin: 0rem 0rem 1.5rem 0rem;
 }
 
 .card-inner {
@@ -193,6 +228,7 @@ body {
 .card-footer {
   padding: 1rem;
 }
+
 .card-header {
   padding-bottom: 0;
 }
